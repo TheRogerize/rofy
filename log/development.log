@@ -1,0 +1,23 @@
+  [1m[35m (1111.9ms)[0m  [1m[35mCREATE DATABASE "rofy_development" ENCODING = 'unicode'[0m
+  [1m[35m (607.6ms)[0m  [1m[35mCREATE DATABASE "rofy_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2021-11-11 10:06:29 -0400
+Started GET "/" for 127.0.0.1 at 2021-11-11 10:06:29 -0400
+Processing by Rails::WelcomeController#index as HTML
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/roy/.rvm/gems/ruby-2.6.3/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendering /home/roy/.rvm/gems/ruby-2.6.3/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/roy/.rvm/gems/ruby-2.6.3/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 123.7ms | Allocations: 525)
+  Rendered /home/roy/.rvm/gems/ruby-2.6.3/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 54.6ms | Allocations: 469)
+Completed 200 OK in 562ms (Views: 185.6ms | ActiveRecord: 0.0ms | Allocations: 4406)
+
+
+Completed 200 OK in 603ms (Views: 214.2ms | ActiveRecord: 0.0ms | Allocations: 4677)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 10:06:54 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/roy/.rvm/gems/ruby-2.6.3/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/roy/.rvm/gems/ruby-2.6.3/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.2ms | Allocations: 229)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 870)
+
+
