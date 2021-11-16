@@ -1,0 +1,14 @@
+<nav class="flex items-center justify-center xs:justify-between  flex-wrap bg-indigo-500 p-6">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <%= image_tag "letter-r.png", style: 'height:50px;width:auto; margin-right: 10px' %>
+    <span class="font-semibold text-xl tracking-tight">Rolify</span>
+  </div>
+  <div class="items-center flex justify-end lg:flex md:flex md:flex-no-wrap w-auto">
+    <div class="text-sm lg:flex-grow">
+      <%= link_to "Sign In", login_path, class: "block mt-4 lg:inline-block lg:mt-0 text-indigo-200 hover:text-white" %>
+    </div>
+    <div class="text-sm lg:flex-grow">
+      <%= link_to "Sign Up", signup_path, class: "inline-block text-sm px-4 py-2 ml-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-indigo-500 hover:bg-white mt-4 lg:mt-0" %>
+    </div>
+  </div>
+</nav>
