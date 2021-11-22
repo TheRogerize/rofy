@@ -2,7 +2,8 @@
   "name": "rolify",
   "private": true,
   "dependencies": {
-    "@hotwired/turbo": "^7.0.1",
+    "@hotwired/stimulus": "^3.0.1",
+    "@hotwired/turbo": "https://github.com/hotwired/turbo/archive/dev-builds/latest.tar.gz",
     "@hotwired/turbo-rails": "^7.0.1",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",

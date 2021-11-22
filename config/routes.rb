@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :views
+  devise_for :users
+  resources :products
   get  '/login',        	    to: 'pages#login'
   get  '/signup',        	    to: 'pages#signup'
   get  '/store',        	    to: 'pages#store'

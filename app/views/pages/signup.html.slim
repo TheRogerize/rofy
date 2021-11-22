@@ -5,30 +5,32 @@
 .container.mx-5.py-4.px-4.mt-5.flex.justify-center.align-center.items-center 
    .w-full.max-w-xs
         form.w-full.max-w-lg
+        = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          = render "devise/shared/error_messages", resource: resource
           .flex.flex-wrap.-mx-3.mb-6
             .w-full.px-3.mb-6.md:mb-0 class="md:w-1/2" 
               label.block.uppercase.tracking-wide.text-gray-700.text-xs.font-bold.mb-2 for="grid-first-name" 
-                | First Name
+                = f.label :first_name
               input#grid-first-name.appearance-none.block.w-full.bg-gray-200.text-gray-700.border.border-red-500.rounded.py-3.px-4.mb-3.leading-tight.focus:outline-none.focus:bg-white placeholder="Roy" type="text" /
               p.text-red-500.text-xs.italic Please fill out this field.
             .w-full.px-3 class="md:w-1/2" 
               label.block.uppercase.tracking-wide.text-gray-700.text-xs.font-bold.mb-2 for="grid-last-name" 
-                | Last Name
+                = f.label :last_name
               input#grid-last-name.appearance-none.block.w-full.bg-gray-200.text-gray-700.border.border-gray-200.rounded.py-3.px-4.leading-tight.focus:outline-none.focus:bg-white.focus:border-gray-500 placeholder="Gutierrez" type="text" /
           .flex.flex-wrap.-mx-3.mb-6
             .w-full.px-3
               label.block.uppercase.tracking-wide.text-gray-700.text-xs.font-bold.mb-2 for="grid-email" 
-                | Email
+                = f.label :email
               input#grid-email.appearance-none.block.w-full.bg-gray-200.text-gray-700.border.border-gray-200.rounded.py-3.px-4.mb-3.leading-tight.focus:outline-none.focus:bg-white.focus:border-gray-500 placeholder="roy@gmail.com" type="email" /
           .flex.flex-wrap.-mx-3.mb-6
             .w-full.px-3
               label.block.uppercase.tracking-wide.text-gray-700.text-xs.font-bold.mb-2 for="grid-password" 
-                | Password
+                = f.label :password
               input#grid-password.appearance-none.block.w-full.bg-gray-200.text-gray-700.border.border-gray-200.rounded.py-3.px-4.mb-3.leading-tight.focus:outline-none.focus:bg-white.focus:border-gray-500 placeholder="******************" type="password" /
-          small.py-4.justify-center.text-center
-          | Already have an account? 
-          span.underline.text-red
-            = link_to "Sign In", login_path 
-        .flex.items-center.justify-center
-          button.bg-blue-500.hover:bg-blue-700.text-white.font-bold.mt-3.py-2.px-4.rounded.focus:outline-none.focus:shadow-outline type="button" 
-            | Sign Up
+              small.py-4.justify-center.text-center
+              | Already have an account? 
+              span.underline.text-red
+                = link_to "Sign In", login_path 
+            .flex.items-center.justify-center
+              button.bg-blue-500.hover:bg-blue-700.text-white.font-bold.mt-3.py-2.px-4.rounded.focus:outline-none.focus:shadow-outline type="submit" 
+                = f.submit "Sign Up"
